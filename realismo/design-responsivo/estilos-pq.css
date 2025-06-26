@@ -1,0 +1,20 @@
+body{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.telaPQ{
+    display: block;
+}
+.telaMD, .telaGD{
+    display: none;
+}
+article{
+    width: 90%;
+    float: left;
+    
+    margin: auto 10%;
+}
+article img{
+    max-width: 100%;
+}

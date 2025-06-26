@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <a href="home.html">Home</a>
+
+    <h1>Agendamento para banho e tosa</h1>
+    <h2>Faça seu agendamento com pelo menos 48h de antecedência</h2>
+
+    <form>
+        <fieldset>
+            <legend>Identificação do dono do animal</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="João da Silva" maxlength="50" size="30">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="endereco">Endereço:</label>
+               
+            </div>
+
+            <br>
+
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" maxlength="9" size="30">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="usuario@email.com" maxlength="50" size="30">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="tel">Tel/Cel:</label>
+                <input type="text" name="tel" id="tel" placeholder="(00) 00000-0000" maxlength="50" size="30">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Animal</legend>
+            <div>
+                <label for="nome_animal">Nome:</label>
+                <input type="text" name="nome_animal" id="nome_animal" placeholder="Bob/Caramelo" maxlength="50" size="30">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="porte">Porte do cão:</label>
+                <input type="radio" name="porte" id="pq" value="pequeno" checked>
+                <label for="pq">Pequeno</label>
+
+                <input type="radio" name="porte" id="md" value="medio">
+                <label for="md">Médio</label>
+
+                <input type="radio" name="porte" id="gd" value="grande">
+                <label for="gd">Grande</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="tosa">Tipo de tosa:</label>
+                <select name="tipo_tosa" id="tipo_tosa">
+                    <option value="">Nenhuma</option>
+                    <option value="">Tosa Padrão</option>
+                    <option value="">Tosa na Tesoura</option>
+                    <option value="">Tosa da Raça</option>
+                    <option value="">Tosa Higiênica</option>
+                    <option value="">Tosa Bebe</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="obs">Observação:</label>
+                <textarea 
+                name="obs" 
+                id="obs" 
+                cols="25" 
+                rows="5"
+                placeholder="Digite alguma informação do animal se necessario:"
+                ></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horário - (não atendemos domingo e segunda-feira)</legend>
+
+            <p>Indique os dias da semana de sua preferência:</p>
+            <div>
+                <input type="checkbox" name="ter" id="ter">
+                <label for="">Terça-feira</label>
+
+                <input type="checkbox" name="qua" id="qua">
+                <label for="">Quarta-feira</label>
+
+                <input type="checkbox" name="qui" id="qui">
+                <label for="">Quinta-feira</label>
+
+                <input type="checkbox" name="sex" id="sex">
+                <label for="">Sexta-feira</label>
+
+                <input type="checkbox" name="sab" id="sab">
+                <label for="">Sábado</label>
+            </div>
+            
+            <br>
+            <div>
+                <label for="hora_ini">Primeira opção de horário:</label>
+                <input type="time" name="hora_ini" id="hora_ini">
+            </div>
+            <div>
+                <label for="hora_fim">Segunda opção de horário:</label>
+                <input type="time" name="hora_fim" id="hora_fim">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
